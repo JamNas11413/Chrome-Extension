@@ -1,0 +1,114 @@
+
+body {
+    background-image: url(background.jpg);
+    background-size: cover;
+}
+/* 1. Basic Setup for the Popup Window */
+body {
+    margin: 0;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-width: 400px; /* Keeps the extension popup wide enough */
+    text-align: center;
+}
+
+.extension-container {
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-top: 100px;
+    margin-left: 325px;
+    margin-right: 325px;
+    padding-bottom: 150px;
+    padding: 100px;
+}
+.extension-container:hover {
+    background-color: rgba(255, 255, 255, 0.7); /* Slightly more opaque on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.10); /* Enhanced shadow on hover */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+    transform: scale(1.2);
+    transition: transform 0.9s;
+}
+.extension-container:not(:hover){
+ transition: 0.7s ease-in-out;
+}
+/* 2. Styling the Input Field */
+#input-el {
+    width: 100%;             /* Fills the container */
+    padding: 10px;
+    box-sizing: border-box;  /* Ensures padding doesn't increase width */
+    border: 1px solid #dfe1e5;
+    border-radius: 9px;      /* Rounded corners */
+    margin-bottom: 10px;     /* Space between input and button */
+    font-size: 14px;
+    outline: none;           /* Removes default blue outline */
+}
+#input-el:hover {
+    border:1px solid #259af4;
+}
+
+/* Add a green border when the user clicks the input */
+#input-el:focus {
+    border-color: #62234d;
+    box-shadow: 0 0 5px rgba(95, 147, 65, 0.2);
+}
+
+/* 3. Styling the Save Button */
+.btn {
+    background-color: #259af4; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    width: 150px;             /* Makes button span the full width */
+    transition: background-color 0.2s; /* Smooth color change */
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+/* Darker green when hovering over the button */
+.btn:hover {
+    background-color: #0c5e9d;
+}
+
+/* Slightly different look when clicking */
+#input-btn:active {
+    transform: translateY(1px); /* Creates a "pressed" effect */
+}
+
+#ul-el {
+    text-align: left;
+    list-style: none;  /*  rempove the bullets */
+    padding-left: 0px;
+}
+li {
+    margin-top: 5px;
+}
+li a {   /* as we can have other anchor tags in the doc se wecan specify that we want the one inside li by doing so */
+    color: #62234d;
+}
+
+#Delete-btn {
+    background-color: white;
+    color: #259af4;
+    border: 1px solid #259af4;
+}
+
+#Delete-btn:hover {
+    background-color: #259af4;
+    color: white;
+    border: 1px solid #259af4;
+    text-shadow: none;
+}
+
+
+
+
+
+
+
